@@ -20,7 +20,7 @@ public class PointTests {
   }
 
   @Test
-  public void testDistanceForIrrationalNumbers() {
+  public void testDistanceForNegativeNumbers() {
     Point p = new Point(-1, -1, -4, -4);
     Assert.assertEquals(p.distance(), 4.242640687119285);
 
