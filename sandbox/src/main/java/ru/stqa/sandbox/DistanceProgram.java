@@ -4,10 +4,17 @@ public class DistanceProgram {
 
   public static void main(String[] args) {
 
-    Point p = new Point(-4, 9, 16, 2);
+    Point p1 = new Point();
+    p1.x = 1;
+    p1.y = 1;
 
-    System.out.println("Расстояние между точками с координатами: p1 = (" + p.x1 + ", " + p.y1 + "), " +
-            "p2 = (" + p.x2 + ", " + p.y2 + "), равно: " + p.distance());
+    Point p2 = new Point();
+    p2.x = 0;
+    p2.y = 0;
+
+    double res = p1.distance(p2);
+    System.out.println("Расстояние между точками с координатами: p1 = (" + p1.x + ", " + p1.y + "), " +
+            "p2 = (" + p2.x + ", " + p2.y + "), равно: " + res);
 
   }
 }
